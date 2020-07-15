@@ -1,5 +1,6 @@
 const gameContainer = document.getElementById("game");
 const button = document.querySelector('button');
+let body = document.querySelector('body');
 let cardsMatched = null;
 let card1 = null;
 let card2 = null;
@@ -88,7 +89,7 @@ function newGame(){
 
   for (card of allCards){    
     card.className = '';
-    card.style.backgroundColor = '';
+    card.style.backgroundColor = body.style.backgroundColor;
     card.classList.remove('flipped');
     card.addEventListener('click', handleCardClick);
   }
@@ -128,8 +129,8 @@ function handleCardClick(event) {
     }
     else{
       setTimeout(function(){
-        card1.style.backgroundColor = 'white';
-        card2.style.backgroundColor = 'white';
+        card1.style.backgroundColor = body.style.backgroundColor;
+        card2.style.backgroundColor = body.style.backgroundColor;
         card1.classList.remove('flipped');
         card2.classList.remove('flipped')
         card1 = null;

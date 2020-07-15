@@ -8,8 +8,9 @@
 
 body{
   background-color: skyblue;
+}
 
-button {
-  width: 100px;
-  height: 100px;
+#button {
+  width: 80px;
+  height: 80px;
 }
