@@ -6,6 +6,9 @@
   display: inline-block;
 }
 
+body{
+  background-color: skyblue;
+
 button {
   width: 100px;
   height: 100px;
